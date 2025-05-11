@@ -113,8 +113,8 @@ void setup() {
   initEncoderDriver();
   initMotorController();
   float dt        = 1.0f / PID_RATE;
-  float wheel_b   = 0.30f;
-  float wheel_r   = 0.05f;
+  float wheel_b   = 0.20f;
+  float wheel_r   = 0.03f;
   initDiffController(dt, wheel_b, wheel_r,
                       1.2f, 0.01f, 0.1f,
                       1.2f, 0.01f, 0.1f);
