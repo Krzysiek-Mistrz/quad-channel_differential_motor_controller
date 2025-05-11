@@ -131,10 +131,10 @@ In Arduino IDE:
 3. **Upload** and open Serial Monitor at `BAUDRATE`.  
 4. Send commands like `r` to reset, `e` to read encoders, `m 0.1 0.2` for diff drive (once added).
   
-In PlatformIO:  
+In PlatformIO (u need to have platformio installed `python3 -m pip install --user -U platformio`):  
 1. In ur terminal type: `pio run`.  
 2. `pio run -t upload`.  
-3. `pio device monitor`.  
+3. `pio device monitor -b 57600`.  
 
 ---
 

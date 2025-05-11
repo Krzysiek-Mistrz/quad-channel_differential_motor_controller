@@ -1,8 +1,9 @@
 #define USE_BASE
 
-#define BAUDRATE        57600
-#define MAX_PWM         255
-#define CMD_LINE_SIZE   64
+#define BAUDRATE           57600
+#define MAX_PWM            255
+#define CMD_LINE_SIZE      64
+#define AUTO_STOP_INTERVAL 5000
 
 #include <Arduino.h>
 #include <string.h>

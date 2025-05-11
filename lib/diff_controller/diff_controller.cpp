@@ -4,8 +4,8 @@
 #include <Arduino.h>
 #include <cmath>
 
-// pulses per wheel revolution (set to your encoder’s CPR)
-static constexpr float ENCODER_PPR = 20.0f;
+// pulses per wheel revolution (SET TO UR ENCODER CPR)
+static constexpr float ENCODER_PPR = 115.3125f;
 // max PWM magnitude
 static constexpr int MAX_PWM       = 255;
 // globals (defined extern in header)
@@ -59,7 +59,7 @@ void setDiffTarget(float v, float w) {
 }
 
 void resetPID() {
-  resetEncoders();
+  //resetEncoders();  if you want to measeure your CPR LEAVE COMMENTED
   leftPID.PrevEnc   = 0;
   leftPID.PrevInput = 0;
   leftPID.ITerm     = 0;
