@@ -125,11 +125,16 @@ initDiffController(dt, wheel_b, wheel_r,
 
 ## Building & Uploading
 
-1. Open in Arduino IDE or PlatformIO.  
-2. Select your ESP32 board & port.  
-3. Adjust pin & PID parameters as above.  
-4. **Upload** and open Serial Monitor at `BAUDRATE`.  
-5. Send commands like `r` to reset, `e` to read encoders, `z 0.1 0.2` for diff drive (once added).
+In Arduino IDE:  
+1. Select your ESP32 board & port.  
+2. Adjust pin & PID parameters as above.  
+3. **Upload** and open Serial Monitor at `BAUDRATE`.  
+4. Send commands like `r` to reset, `e` to read encoders, `m 0.1 0.2` for diff drive (once added).
+  
+In PlatformIO:  
+1. In ur terminal type: `pio run`.  
+2. `pio run -t upload`.  
+3. `pio device monitor`.  
 
 ---
 
